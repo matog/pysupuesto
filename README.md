@@ -5,9 +5,9 @@ Modulo de python que permite descargar información presupuestaria de [Presupues
 
 La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El sitio del ciudadano permite descargar año por año, pero no una base con una serie temporal.
 
-Pysupuesto, mediante ``get_data`` descarga, por el momento, información de crédito y ejecución, y recursos. De periodicidad anual, mensual y diaria (en el periodo en que esté disponible). 
+Pysupuesto, mediante ``get_data`` descarga, por el momento, información de crédito y su ejecución, y de recursos. De periodicidad anual, mensual y diaria (según el periodo). 
 
-Tambien, utilizando ``get_docs`` muestra los recursos (en términos de información) disponibles para cada año, por si se necesita descargar manualmente información complementaria.
+Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si se necesita descargar manualmente información complementaria.
 
 ## Requirimientos
 
@@ -16,11 +16,11 @@ Tambien, utilizando ``get_docs`` muestra los recursos (en términos de informaci
 - bs4=>0.0.1
 - pandas=>1.3.3
 
-## Modo de uso.
+## Modo de uso
 
-Por el momento no esa empaquetado y disponible mediante ``pip``, por lo que se debe copiar localmente:
+Por el momento no está empaquetado y disponible mediante ``pip``, por lo que se debe copiar localmente:
 
-- Copiar el archivo pysupuesto.py em el directorio de trabajo.
+- Copiar el archivo pysupuesto.py en el directorio de trabajo.
 - Importarlo con ``import paysupuesto`` en el archivo de trabajo.
 
 ### Sintaxis GET_DATA
@@ -29,39 +29,41 @@ Por el momento no esa empaquetado y disponible mediante ``pip``, por lo que se d
 	
 Donde:
 
-- 'tipo': Por el momento, sólo toma dos valores
+- ``tipo``: Por el momento, sólo toma dos valores
     - ``recursos``: Devuelve los recursos presupeustarios.
 	- ``credito``: Devuelve la ejecución presupuestaria.
-- 'periodicidad': Dependiendo el año, puede ser:
+- ``periodicidad``: Dependiendo el año, puede ser:
 	- ``a``: Anual (desde 1995 a 2021)
 	- ``m``: Mensual (desde 1995 a 2021)
 	- ``d``: Diaria (desde 2017 a 2021)
 - ``ejercicio inicio``: Ejercicio desde el cual se quiere descargar la información
 - ``ejercicio cierre``: Hasta el ejercicio hasta el cual se quiere descargar información. Puede omitirse para sólo descargar 'ejercicio inicio'.
 
-La información descargada es una dataframe (llamado ``df`` en el ejemplo).
-	
+La información es descargada a un dataframe (llamado ``df`` en el ejemplo).
+
+![imagen](https://user-images.githubusercontent.com/660448/133935451-02c52268-383d-4ee9-b2a9-e19cd2cc201f.png)
+
 ### Ejemplos
 
 #### Crédito y ejecución
 
 Descargar la información del crédito presupuestario y su ejecución del ejercicio 2018, con periodicidad diaria:
 
-	df = pyspuesto.getbase('credito','d', 2018)
+	df = pysupuesto.getbase('credito','d', 2018)
 	
 Descargar la información del crédito presupuestario y su ejecución desde el ejercicio 1995 al 2021, con periodicidad anual:
 
-	df = pyspuesto.getbase('credito','a', 1995,2021)
+	df = pysupuesto.getbase('credito','a', 1995,2021)
 
 #### Recursos 
 
 Descargar la información de recursos presupuestarios del ejercicio 1997, con periodicidad mensual:
 
-	df = pyspuesto.getbase('recursos','m', 1997)
+	df = pysupuesto.getbase('recursos','m', 1997)
 	
 Descargar la información de recursos presupuestarios desde el ejercicio 2001 al ejercicio 2005, con periodicidad anual:
 
-	df = pyspuesto.getbase('recursos','a', 2001, 2005)
+	df = pysupuesto.getbase('recursos','a', 2001, 2005)
 	
 ### Sintaxis GET_DOCS
 
@@ -69,11 +71,13 @@ Descargar la información de recursos presupuestarios desde el ejercicio 2001 al
 
 Devuelve un print con todos los archivos disponibles para ese ejercicio.
 
+![imagen](https://user-images.githubusercontent.com/660448/133935588-bdac4a60-45e8-495c-827b-d5bb179bf643.png)
+
 ## ToDo:
 
 - Empaquetar y compartir en [pypi](https://pypi.org/) para que esté disponible mediante ``pip install``
 - Mejorar el loggin.
-- Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición mas descargas.
+- Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición más descargas.
 
 
 	

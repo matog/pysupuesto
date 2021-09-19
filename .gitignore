@@ -4,4 +4,4 @@ token/
 *.env
 requirements.txt
 test.log
-
+*.ipynb
