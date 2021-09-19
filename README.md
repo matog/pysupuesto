@@ -21,7 +21,7 @@ Tambien, utilizando ``get_docs``, muestra los recursos (en términos de informac
 Por el momento no está empaquetado y disponible mediante ``pip``, por lo que se debe copiar localmente:
 
 - Copiar el archivo pysupuesto.py en el directorio de trabajo.
-- Importarlo con ``import paysupuesto`` en el archivo de trabajo.
+- Importarlo con ``import pysupuesto`` en el archivo de trabajo.
 
 ### Sintaxis GET_DATA
  
