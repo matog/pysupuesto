@@ -71,7 +71,7 @@ Descargar la información de recursos presupuestarios desde el ejercicio 2001 al
 
 Devuelve un print con todos los archivos disponibles para ese ejercicio.
 
-![imagen](https://user-images.githubusercontent.com/660448/133935588-bdac4a60-45e8-495c-827b-d5bb179bf643.png)
+![imagen](https://user-images.githubusercontent.com/660448/133935782-8763d117-0d48-4a26-bba2-f713781e1cd0.png)
 
 ## ToDo:
 
