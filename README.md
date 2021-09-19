@@ -49,21 +49,21 @@ La información es descargada a un dataframe (llamado ``df`` en el ejemplo).
 
 Descargar la información del crédito presupuestario y su ejecución del ejercicio 2018, con periodicidad diaria:
 
-	df = pysupuesto.getbase('credito','d', 2018)
+	df = pysupuesto.get_data('credito','d', 2018)
 	
 Descargar la información del crédito presupuestario y su ejecución desde el ejercicio 1995 al 2021, con periodicidad anual:
 
-	df = pysupuesto.getbase('credito','a', 1995,2021)
+	df = pysupuesto.get_data('credito','a', 1995,2021)
 
 #### Recursos 
 
 Descargar la información de recursos presupuestarios del ejercicio 1997, con periodicidad mensual:
 
-	df = pysupuesto.getbase('recursos','m', 1997)
+	df = pysupuesto.get_data('recursos','m', 1997)
 	
 Descargar la información de recursos presupuestarios desde el ejercicio 2001 al ejercicio 2005, con periodicidad anual:
 
-	df = pysupuesto.getbase('recursos','a', 2001, 2005)
+	df = pysupuesto.get_data('recursos','a', 2001, 2005)
 	
 ### Sintaxis GET_DOCS
 
