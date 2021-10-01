@@ -2,7 +2,7 @@
 venv*/
 token/
 *.env
-*.txt
 test.log
 *.ipynb
 __pycache__/
+
