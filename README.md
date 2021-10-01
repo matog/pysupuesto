@@ -22,6 +22,10 @@ Tambien, utilizando ``get_docs``, muestra los recursos (en términos de informac
 
 	pip install pysupuesto
 
+### Import
+
+	import pysupuesto
+	
 ### Sintaxis GET_DATA
  
 	df = pysupuesto.get_data('tipo', 'periodicidad', ejercicio inicio, ejercicio cierre)
