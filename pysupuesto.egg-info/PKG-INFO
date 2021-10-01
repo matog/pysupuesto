@@ -1,23 +1,24 @@
 Metadata-Version: 2.1
 Name: pysupuesto
-Version: 0.2.1.0.1
-Summary: Un simple gestor de descargar de bases del presupuesto argentino
+Version: 0.2.1.0.2
+Summary: Módulo para descargar bases de diferentes ejercicios (o series temporales) del presupuesto público nacional argentino desde el Ministerio de Economía
 Home-page: UNKNOWN
 Author: @Mato
 Author-email: no@email.org
 License: MIT
 Description: # Pysupuesto
-        [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![PyPI version](https://badge.fury.io/py/pysupuesto.svg)](https://badge.fury.io/py/pysupuesto) [![GitHub version](https://badge.fury.io/gh/matog%2Fpysupuesto.svg)](https://badge.fury.io/gh/matog%2Fpysupuesto) [![Fork](https://img.shields.io/github/forks/matog/pysupuesto?style=social)](https://github.com/login?return_to=%2Fmatog%2Fpysupuesto) [![Twitter](https://img.shields.io/twitter/follow/matog?style=social)](https://twitter.com/mato)
         
+         
         Modulo de python que permite descargar información presupuestaria de [Presupuesto Abierto](https://www.presupuestoabierto.gob.ar/sici/datos-abiertos). El sitio contiene diversa información presupuestaria desde el ejercicio 1995 a la actualidad.
         
-        La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El sitio del ciudadano permite descargar año por año, pero no una base con una serie temporal.
+        La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El 'Sitio del ciudadano' permite descargar año por año, pero no una base con una serie temporal que incluya varios ejercicios.
         
         Pysupuesto, mediante ``get_data`` descarga, por el momento, información de crédito y su ejecución, y de recursos. De periodicidad anual, mensual y diaria (según el periodo). 
         
-        Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si se necesita descargar manualmente información complementaria.
+        Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si es necesario descargar manualmente información complementaria.
         
-        ## Requirimientos
+        ## Requerimientos
         
         - Python 3.8
         - beautifulsoup4=>4.10.0
@@ -26,11 +27,14 @@ Description: # Pysupuesto
         
         ## Modo de uso
         
-        Por el momento no está empaquetado y disponible mediante ``pip``, por lo que se debe copiar localmente:
+        ### Instalación
         
-        - Copiar el archivo pysupuesto.py en el directorio de trabajo.
-        - Importarlo con ``import pysupuesto`` en el archivo de trabajo.
+        	pip install pysupuesto
         
+        ### Import
+        
+        	import pysupuesto
+        	
         ### Sintaxis GET_DATA
          
         	df = pysupuesto.get_data('tipo', 'periodicidad', ejercicio inicio, ejercicio cierre)
@@ -83,9 +87,9 @@ Description: # Pysupuesto
         
         ## ToDo:
         
-        - Empaquetar y compartir en [pypi](https://pypi.org/) para que esté disponible mediante ``pip install``
-        - Mejorar el loggin.
-        - Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición más descargas.
+        - ~~Empaquetar y compartir en [pypi](https://pypi.org/) para que esté disponible mediante ``pip install``~~
+        - Mejorar el sistema de logs.
+        - Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición mayor cantidad descargas.
         
         
         	
