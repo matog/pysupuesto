@@ -11,7 +11,7 @@ classifiers = [
 setup(
   name='pysupuesto',
   version='0.2.1.0.1',
-  description='Un simple gestor de descargar de bases del presupuesto argentino',
+  description='Un simple gestor de descargar de bases del presupuesto público nacional argentino',
   long_description_content_type="text/markdown",
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='',  

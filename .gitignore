@@ -5,4 +5,6 @@ token/
 test.log
 *.ipynb
 __pycache__/
+pysupuesto.egg-info/
+dist/
 

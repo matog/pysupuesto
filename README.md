@@ -3,11 +3,11 @@
 
 Modulo de python que permite descargar información presupuestaria de [Presupuesto Abierto](https://www.presupuestoabierto.gob.ar/sici/datos-abiertos). El sitio contiene diversa información presupuestaria desde el ejercicio 1995 a la actualidad.
 
-La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El sitio del ciudadano permite descargar año por año, pero no una base con una serie temporal.
+La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El 'Sitio del ciudadano' permite descargar año por año, pero no una base con una serie temporal que incluya varios ejercicios.
 
 Pysupuesto, mediante ``get_data`` descarga, por el momento, información de crédito y su ejecución, y de recursos. De periodicidad anual, mensual y diaria (según el periodo). 
 
-Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si se necesita descargar manualmente información complementaria.
+Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si es necesario descargar manualmente información complementaria.
 
 ## Requirimientos
 
@@ -18,10 +18,7 @@ Tambien, utilizando ``get_docs``, muestra los recursos (en términos de informac
 
 ## Modo de uso
 
-Por el momento no está empaquetado y disponible mediante ``pip``, por lo que se debe copiar localmente:
-
-- Copiar el archivo pysupuesto.py en el directorio de trabajo.
-- Importarlo con ``import pysupuesto`` en el archivo de trabajo.
+	pip install pysupuesto
 
 ### Sintaxis GET_DATA
  
@@ -75,9 +72,9 @@ Devuelve un print con todos los archivos disponibles para ese ejercicio.
 
 ## ToDo:
 
-- Empaquetar y compartir en [pypi](https://pypi.org/) para que esté disponible mediante ``pip install``
-- Mejorar el loggin.
-- Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición más descargas.
+- ~~Empaquetar y compartir en [pypi](https://pypi.org/) para que esté disponible mediante ``pip install``~~
+- Mejorar el sistema de logs.
+- Intentar analizar toda la información disponible (para eso cree ``get_docs``) para expandir el modulo y poner a disposición mayor cantidad descargas.
 
 
 	
