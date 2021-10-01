@@ -1,6 +1,5 @@
 # Pysupuesto
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Fork](https://img.shields.io/github/forks/matog/pysupuesto?style=social)](https://github.com/login?return_to=%2Fmatog%2Fpysupuesto) [![Twitter](https://img.shields.io/twitter/follow/matog?style=social)](https://twitter.com/mato)
 Modulo de python que permite descargar información presupuestaria de [Presupuesto Abierto](https://www.presupuestoabierto.gob.ar/sici/datos-abiertos). El sitio contiene diversa información presupuestaria desde el ejercicio 1995 a la actualidad.
 
 La motivación para programar este modulo fue la necesidad de contar, de forma sencilla, con series temporales de información presupuestaria. El 'Sitio del ciudadano' permite descargar año por año, pero no una base con una serie temporal que incluya varios ejercicios.
@@ -9,7 +8,7 @@ Pysupuesto, mediante ``get_data`` descarga, por el momento, información de cré
 
 Tambien, utilizando ``get_docs``, muestra los recursos (en términos de información) disponibles para cada año, por si es necesario descargar manualmente información complementaria.
 
-## Requirimientos
+## Requerimientos
 
 - Python 3.8
 - beautifulsoup4=>4.10.0
