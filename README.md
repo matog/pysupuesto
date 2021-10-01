@@ -1,5 +1,5 @@
 # Pysupuesto
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Fork](https://img.shields.io/github/forks/matog/pysupuesto?style=social)](https://github.com/login?return_to=%2Fmatog%2Fpysupuesto) [![Twitter](https://img.shields.io/twitter/follow/matog?style=social)](https://twitter.com/mato)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![PyPI version](https://badge.fury.io/py/pysupuesto.svg)](https://badge.fury.io/py/pysupuesto) [![Fork](https://img.shields.io/github/forks/matog/pysupuesto?style=social)](https://github.com/login?return_to=%2Fmatog%2Fpysupuesto) [![Twitter](https://img.shields.io/twitter/follow/matog?style=social)](https://twitter.com/mato)
 
  
 Modulo de python que permite descargar información presupuestaria de [Presupuesto Abierto](https://www.presupuestoabierto.gob.ar/sici/datos-abiertos). El sitio contiene diversa información presupuestaria desde el ejercicio 1995 a la actualidad.
