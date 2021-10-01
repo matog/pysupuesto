@@ -18,6 +18,8 @@ Tambien, utilizando ``get_docs``, muestra los recursos (en términos de informac
 
 ## Modo de uso
 
+### Instalación
+
 	pip install pysupuesto
 
 ### Sintaxis GET_DATA
