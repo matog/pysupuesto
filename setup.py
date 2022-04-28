@@ -10,7 +10,7 @@ classifiers = [
  
 setup(
   name='pysupuesto',
-  version='0.2.1.0.2',
+  version='0.2.1.0.3',
   description='Módulo para descargar bases de diferentes ejercicios (o series temporales) del presupuesto público nacional argentino desde el Ministerio de Economía',
   long_description_content_type="text/markdown",
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
