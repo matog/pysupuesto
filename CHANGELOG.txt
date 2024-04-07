@@ -1,4 +1,7 @@
 CHANGELOG
 
 VERSION 0.2.2:
+- Update url for downloading data from years 2019-2023
+- Change 'append' (now deprecated) package for 'concat'.
+VERSION 0.2.2:
 - Change url for downloading data from years 1995-2018
