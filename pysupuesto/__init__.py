@@ -32,7 +32,10 @@ files_dict = {1995:{'diario':'', 'mensual':'-mensual-1995', 'anual':'-anual-1995
              2018:{'diario':'-diario-2018', 'mensual':'-mensual-2018', 'anual':'-anual-2018'},
              2019:{'diario':'-diario-2019', 'mensual':'-mensual-2019', 'anual':'-anual-2019'},
              2020:{'diario':'-diario-2020', 'mensual':'-mensual-2020', 'anual':'-anual-2020'},
-             2021:{'diario':'-diario-2021', 'mensual':'-mensual-2021', 'anual':'-anual-2021'}}
+             2021:{'diario':'-diario-2021', 'mensual':'-mensual-2021', 'anual':'-anual-2021'},
+             2022:{'diario':'-diario-2022', 'mensual':'-mensual-2022', 'anual':'-anual-2022'},
+             2023:{'diario':'-diario-2023', 'mensual':'-mensual-2023', 'anual':'-anual-2023'}
+             }
 
 
 def get_data(topic, frq='', year1='', year2=''):
@@ -58,7 +61,7 @@ def get_data(topic, frq='', year1='', year2=''):
         return ()
 
     # Verificamos que la periodicidad ingresada exista
-    if year1 < 1995 or year1 > 2021:
+    if year1 < 1995 or year1 > 2023:
         logging.debug('Error! El año {0} no existe en el servidor!'.format(year1))
         return ()
 
@@ -86,16 +89,15 @@ def get_data(topic, frq='', year1='', year2=''):
             if frq in list_frq:
                 url = read_url + topic + files_dict[year][frq_dict[frq]] + '.zip'
 
-                # Descargamos el archivo
+        # Descargamos el archivo
         try:
             logging.debug('  Intentando descargar desde {}'.format(url))
             df = pd.read_csv(url, compression='zip')
             logging.debug('  Se descargó con éxito el archivo solicitado desde {}'.format(url))
         except:
             logging.debug('  Error al intentar descargar desde {0}'.format(url))
-
         # 'Pegamos' el dataframe al acumulado (si el rango de periodos es >1)
-        df_return = df_return.append(df)
+        df_return = pd.concat([df_return,df])
 
     return (df_return)
 
